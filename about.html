@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Maheshwari Dhadbanjan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; background-color: #fcfaff; margin: 0; }
+        .nav-purple { background-color: #0380c3; }
+        
+        /* Left-aligned section title for About Me */
+        .section-title-left { 
+            font-size: 2.5rem; 
+            font-weight: 800; 
+            color: #111827; 
+            text-align: left; 
+            margin-bottom: 2rem; 
+        }
+
+        /* Centered section title with line for Technical Skills */
+        .section-title-center { 
+            font-size: 2.5rem; 
+            font-weight: 800; 
+            color: #111827; 
+            text-align: center; 
+            margin-bottom: 1rem;
+            position: relative;
+            display: block;
+        }
+
+        .title-underline {
+            width: 80px;
+            height: 4px;
+            background-color: #1192b2;
+            margin: 0 auto 3rem auto;
+            border-radius: 2px;
+        }
+        
+        .about-card {
+            background: #f3f0ff;
+            border-left: 5px solid #1192b2;
+            padding: 2.5rem;
+            border-radius: 12px;
+            max-width: 100%;
+            margin: 0 auto 4rem auto;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-group {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s;
+        }
+        .skill-group:hover { transform: translateY(-5px); }
+        .skill-title { color: #1192b2; font-weight: 700; margin-bottom: 1rem; border-bottom: 2px solid #f3f0ff; padding-bottom: 0.5rem; }
+        .skill-list { list-style: none; padding: 0; }
+        .skill-list li { margin-bottom: 0.5rem; color: #4b5563; font-size: 0.95rem; display: flex; align-items: center; }
+        .skill-list li i { color: #1192b2; margin-right: 10px; font-size: 0.8rem; }
+
+        .standout-card {
+            background: #f9fafb;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            border-bottom: 4px solid #1192b2;
+            transition: 0.3s;
+        }
+        .standout-card:hover { background: white; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+        .standout-icon { font-size: 1.5rem; margin-bottom: 1rem; }
+    </style>
+</head>
+<body>
+    <nav class="nav-purple text-white py-4 px-10 flex justify-between items-center sticky top-0 z-50">
+        <div class="text-xl font-bold">Maheshwari Dhadbanjan</div>
+        <div class="hidden md:flex gap-8 text-sm font-medium">
+            <a href="index.html" class="opacity-80 hover:opacity-100">Home</a>
+            <a href="about.html" class="border-b-2 border-white">About</a>
+            <a href="projects.html" class="opacity-80 hover:opacity-100">Projects</a>
+            <a href="experience.html" class="opacity-80 hover:opacity-100">Experience</a>
+            <a href="education.html" class="opacity-80 hover:opacity-100">Education</a>
+            <a href="contact.html" class="opacity-80 hover:opacity-100">Contact</a>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto py-16 px-6">
+        <h2 class="section-title-left">About Me</h2>
+        
+        <div class="about-card">
+            <p class="text-gray-700 leading-relaxed text-lg">
+                Final-year B-Tech CSE student with a strong foundation in Java, DSA, and web development. 
+                Experienced in working with advanced NLP models such as BERT, Agri-BERT, and LLaMA, with a passion 
+                for building efficient, user-friendly applications. I am a quick learner and creative thinker, 
+                eager to leverage technical expertise in AI-driven projects and contribute to team success.
+            </p>
+        </div>
+
+        <h2 class="section-title-center">Technical Skills</h2>
+        <div class="title-underline"></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+            <div class="skill-group">
+                <h4 class="skill-title">Languages</h4>
+                <ul class="skill-list">
+                    <li><i class="fas fa-check"></i> Java</li>
+                    <li><i class="fas fa-check"></i> DSA</li>
+                </ul>
+            </div>
+
+            <div class="skill-group">
+                <h4 class="skill-title">Web Development</h4>
+                <ul class="skill-list">
+                    <li><i class="fas fa-check"></i> HTML</li>
+                    <li><i class="fas fa-check"></i> CSS</li>
+                    <li><i class="fas fa-check"></i> JavaScript</li>
+                </ul>
+            </div>
+
+            <div class="skill-group">
+                <h4 class="skill-title">Databases & Tools</h4>
+                <ul class="skill-list">
+                    <li><i class="fas fa-check"></i> SQL & DBMS</li>
+                    <li><i class="fas fa-check"></i> VS Code</li>
+                    <li><i class="fas fa-check"></i> MS Office</li>
+                </ul>
+            </div>
+
+            <div class="skill-group">
+                <h4 class="skill-title">Specialized</h4>
+                <ul class="skill-list">
+                    <li><i class="fas fa-check"></i> BERT & LLaMA</li>
+                    <li><i class="fas fa-check"></i> Generative AI</li>
+                    <li><i class="fas fa-check"></i> NLP Techniques</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 class="section-title-center">Why I Stand Out</h2>
+        <div class="title-underline"></div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="standout-card">
+                <div class="standout-icon">💡</div>
+                <h4 class="font-bold mb-2">Problem Solver</h4>
+                <p class="text-sm text-gray-500">I approach technical challenges with analytical thinking and attention to detail.</p>
+            </div>
+            <div class="standout-card">
+                <div class="standout-icon">🚀</div>
+                <h4 class="font-bold mb-2">Quick Learner</h4>
+                <p class="text-sm text-gray-500">Always eager to learn new AI technologies and best coding practices.</p>
+            </div>
+            <div class="standout-card">
+                <div class="standout-icon">🤝</div>
+                <h4 class="font-bold mb-2">Team Player</h4>
+                <p class="text-sm text-gray-500">Passionate about collaboration, effective communication, and team success.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

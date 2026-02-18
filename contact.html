@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Maheshwari Dhadbanjan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; background-color: #fcfaff; margin: 0; }
+        .nav-purple { background-color: #0380c3; }
+        
+        /* Nav bar name styling */
+        .nav-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        .section-title-left { 
+            font-size: 3rem; 
+            font-weight: 800; 
+            color: #111827; 
+            text-align: left; 
+            margin-bottom: 2rem;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin-left: 0;
+        }
+
+        .input-label {
+            display: block;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            background-color: white;
+            margin-bottom: 1.5rem;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .input-field:focus { border-color: #1192b2; }
+        .message-field { min-height: 150px; resize: vertical; }
+
+        .btn-send {
+            background: linear-gradient(90deg, #1192b2, #2dd4bf);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-send:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(99, 102, 241, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-purple text-white py-4 px-10 flex justify-between items-center sticky top-0 z-50">
+        <div class="nav-name">Maheshwari Dhadbanjan</div>
+        <div class="hidden md:flex gap-8 text-sm font-medium">
+            <a href="index.html" class="opacity-80 hover:opacity-100">Home</a>
+            <a href="about.html" class="opacity-80 hover:opacity-100">About</a>
+            <a href="projects.html" class="opacity-80 hover:opacity-100">Projects</a>
+            <a href="experience.html" class="opacity-80 hover:opacity-100">Experience</a>
+            <a href="education.html" class="opacity-80 hover:opacity-100">Education</a>
+            <a href="contact.html" class="border-b-2 border-white">Contact</a>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto py-20 px-10">
+        <h2 class="section-title-left">Contact Me</h2>
+
+        <div class="form-container">
+            <form action="https://formspree.io/f/mpqjlrra" method="POST">
+                
+                <label for="name" class="input-label">Name</label>
+                <input type="text" id="name" name="name" class="input-field" placeholder="Your Name" required>
+
+                <label for="email" class="input-label">Email</label>
+                <input type="email" id="email" name="email" class="input-field" placeholder="your@email.com" required>
+
+                <label for="message" class="input-label">Message</label>
+                <textarea id="message" name="message" class="input-field message-field" placeholder="Your Message" required></textarea>
+
+                <button type="submit" class="btn-send">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

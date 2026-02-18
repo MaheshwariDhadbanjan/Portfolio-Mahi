@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Maheshwari Dhadbanjan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; background-color: #fcfaff; margin: 0; }
+        .nav-purple { background-color: #0380c3; }
+        
+        .section-title-left { 
+            font-size: 3rem; 
+            font-weight: 800; 
+            color: #111827; 
+            text-align: left; 
+            margin-bottom: 3rem; 
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+            max-width: 1100px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(109, 40, 217, 0.1);
+            border-color: #1192b2;
+        }
+
+        .project-content {
+            padding: 2rem;
+            flex-grow: 1;
+        }
+
+        .project-tag {
+            background: #f3f0ff;
+            color: #1192b2;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .project-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #111827;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .project-description {
+            color: #4b5563;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .tech-stack-label {
+            font-size: 0.85rem;
+            color: #1192b2;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .github-link {
+            color: #1192b2;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 1rem;
+            transition: color 0.2s;
+        }
+
+        .github-link:hover {
+            color: #1192b2;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .project-grid { grid-template-columns: 1fr; }
+            .section-title-left { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-purple text-white py-4 px-10 flex justify-between items-center sticky top-0 z-50">
+        <div class="text-xl font-bold">Maheshwari Dhadbanjan</div>
+        <div class="hidden md:flex gap-8 text-sm font-medium">
+            <a href="index.html" class="opacity-80 hover:opacity-100">Home</a>
+            <a href="about.html" class="opacity-80 hover:opacity-100">About</a>
+            <a href="projects.html" class="border-b-2 border-white">Projects</a>
+            <a href="experience.html" class="opacity-80 hover:opacity-100">Experience</a>
+            <a href="education.html" class="opacity-80 hover:opacity-100">Education</a>
+            <a href="contact.html" class="opacity-80 hover:opacity-100">Contact</a>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto py-20 px-10">
+        <h2 class="section-title-left">Projects</h2>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <span class="project-tag">Machine Learning</span>
+                    <h3 class="project-title">Sleep Disorder Diagnosis via Optimized ML</h3>
+                    <p class="project-description">
+                        Developed a machine learning model to predict sleep disorders from health data using preprocessing, feature engineering, and model optimization techniques.
+                    </p>
+                    <p class="tech-stack-label">Python, ML, Data Science</p>
+                    <a href="https://github.com/MaheshwariDhadbanjan/Sleep-Disorder-Diagnosis-via-Optimized-ML/tree/main" target="_blank" class="github-link">
+                        View on GitHub →
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <span class="project-tag">Cybersecurity</span>
+                    <h3 class="project-title">NetFense-DP: Privacy Defense for GNNs</h3>
+                    <p class="project-description">
+                        Implemented a privacy-preserving defense mechanism for Graph Neural Networks (GNNs) using differential privacy techniques to enhance model robustness against adversarial attacks.
+                    </p>
+                    <p class="tech-stack-label">GNN, Differential Privacy, Security</p>
+                    <a href="https://github.com/MaheshwariDhadbanjan/NetFense-DP-Privacy-Defense-for-GNNs" target="_blank" class="github-link">
+                        View on GitHub →
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <span class="project-tag">AI Research</span>
+                    <h3 class="project-title">Agricultural Knowledge Retrieval with AI Models</h3>
+                    <p class="project-description">
+                        Developed an AI system using BERT, Agri-BERT, and LLaMA to extract domain-specific agricultural information, supporting farmers in decision-making.
+                    </p>
+                    <p class="tech-stack-label">BERT, Agri-BERT, LLaMA, NLP</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <span class="project-tag">Computer Vision</span>
+                    <h3 class="project-title">AI Detection using Local Binary Patterns (LBP)</h3>
+                    <p class="project-description">
+                        Developed a system to detect AI-generated content using LBP feature extraction. Applied ML techniques for classification to distinguish AI outputs from real data.
+                    </p>
+                    <p class="tech-stack-label">LBP, Computer Vision, ML</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

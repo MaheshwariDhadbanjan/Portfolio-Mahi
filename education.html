@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | Maheshwari Dhadbanjan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; background-color: #fcfaff; margin: 0; }
+        .nav-purple { background-color: #0380c3; }
+        
+        .section-title-left { font-size: 2.5rem; font-weight: 800; color: #111827; text-align: left; margin-bottom: 3rem; }
+        .section-title-center { font-size: 2rem; font-weight: 800; color: #111827; text-align: center; margin-bottom: 1rem; }
+        
+        .title-underline { width: 60px; height: 4px; background-color: #1192b2; margin: 0 auto 3rem auto; border-radius: 2px; }
+
+        /* Education Card Styling */
+        .edu-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            display: flex;
+            gap: 2rem;
+            border: 1px solid #e5e7eb;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+        .edu-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+        .edu-icon { font-size: 2.5rem; color: #374151; }
+        
+        .edu-info-box { background: #f9fafb; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #8b5cf6; width: 100%; margin-top: 1rem; }
+        .edu-degree { font-size: 1.25rem; font-weight: 700; color: #111827; }
+        .edu-college { color: #1192b2; font-weight: 600; margin-bottom: 0.5rem; }
+
+        /* Certifications Grid */
+        .cert-card {
+            background: #f3f0ff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #1192b2;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .cert-card:hover { background: white; box-shadow: 0 10px 15px -3px rgba(139, 92, 246, 0.2); }
+
+        /* Extra-Curricular Box */
+        .extra-box {
+            background: #f9fafb;
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+        }
+        .extra-list li { margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 1rem; color: #4b5563; }
+        .extra-list li i { color: #fbbf24; margin-top: 4px; }
+    </style>
+</head>
+<body>
+    <nav class="nav-purple text-white py-4 px-10 flex justify-between items-center sticky top-0 z-50">
+        <div class="text-xl font-bold">Maheshwari Dhadbanjan</div>
+        <div class="hidden md:flex gap-8 text-sm font-medium">
+            <a href="index.html" class="opacity-80 hover:opacity-100">Home</a>
+            <a href="about.html" class="opacity-80 hover:opacity-100">About</a>
+            <a href="projects.html" class="opacity-80 hover:opacity-100">Projects</a>
+            <a href="experience.html" class="opacity-80 hover:opacity-100">Experience</a>
+            <a href="education.html" class="border-b-2 border-white">Education</a>
+            <a href="contact.html" class="opacity-80 hover:opacity-100">Contact</a>
+        </div>
+    </nav>
+
+    <div class="max-w-6xl mx-auto py-16 px-6">
+        <h2 class="section-title-left">Education</h2>
+
+        <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-user-graduate"></i></div>
+            <div class="w-full">
+                <h3 class="edu-degree">B-Tech Computer Science and Engineering</h3>
+                <p class="edu-college">Malla Reddy Engineering College For Women</p>
+                <div class="edu-info-box">
+                    <p class="mb-2"><strong>Timeline:</strong> 2022 – 2026</p>
+                    <p class="mb-2"><strong>CGPA:</strong> 8.97/10.0</p>
+                    <p><strong>Focus Areas:</strong> Java, DSA, Web Development, NLP (BERT, LLaMA)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="w-full">
+                <h3 class="edu-degree">Intermediate (Class 12)</h3>
+                <p class="edu-college">SR Junior College</p>
+                <div class="edu-info-box">
+                    <p class="mb-2"><strong>Timeline:</strong> 2020 – 2022</p>
+                    <p><strong>Percentage:</strong> 93.4%</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-school"></i></div>
+            <div class="w-full">
+                <h3 class="edu-degree">SSC (Class 10)</h3>
+                <p class="edu-college">PNM High School</p>
+                <div class="edu-info-box">
+                    <p class="mb-2"><strong>Timeline:</strong> 2019 – 2020</p>
+                    <p><strong>GPA:</strong> 9.3/10.0</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title-center mt-20">Certifications & Achievements</h2>
+        <div class="title-underline"></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20 max-w-4xl mx-auto">
+            <div class="cert-card">
+                <h4 class="font-bold mb-1">Oracle Java Foundations</h4>
+                <p class="text-xs text-gray-500">Oracle Learning Explorer Badge</p>
+            </div>
+            <div class="cert-card">
+                <h4 class="font-bold mb-1">Programming Data Structures and Algorithms Using Python</h4>
+                <p class="text-xs text-gray-500">SWAYAM NPTEL</p>
+            </div>
+            <div class="cert-card">
+                <h4 class="font-bold mb-1">C and Python Essentials</h4>
+                <p class="text-xs text-gray-500">Cisco Networking Academy</p>
+            </div>
+            <div class="cert-card">
+                <h4 class="font-bold mb-1">Gold Badges in Java</h4>
+                <p class="text-xs text-gray-500">HackerRank</p>
+            </div>
+        </div>
+
+        <h2 class="section-title-center">Accomplishments</h2>
+        <div class="title-underline"></div>
+        <div class="extra-box">
+            <ul class="extra-list">
+                <li><i class="fas fa-award"></i> Runner-Up of Table Tennis in intra sports at MRECW.</li>
+                <li><i class="fas fa-medal"></i> Gold Badges in Java on HackerRank for advanced coding proficiency.</li>
+                <li><i class="fas fa-brain"></i> Completed an intensive workshop on Generative AI for problem-solving and innovation.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
